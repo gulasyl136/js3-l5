@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+<body class="bg-green-200">
+    <u><h1 class="text-center font-semibold">Список пользователей</h1></u>
+    <div class="text-center hover:bg-cyan-100">
+        <u><a href="">users</a></u>
+        <u><a href="./pages/todos.html">todos</a></u>
+        <u><a href="./pages/commmen.html">comments</a></u>
+        <u><a href="./pages/photos.html">photos</a></u>
+    </div>
+    <div id="userList" class="flex flex-wrap w-[1000px] m-auto justify-between gap-[20px] cursor-pointer"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
